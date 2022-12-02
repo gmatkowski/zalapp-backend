@@ -2,6 +2,7 @@
 CREATE TABLE "User" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
     "first_name" TEXT,
     "last_name" TEXT,
     "created_at" DATETIME NOT NULL,
