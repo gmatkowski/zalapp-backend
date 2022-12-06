@@ -4,17 +4,10 @@
     <list default="true" id="e6381c75-6cf9-4b2f-8177-ea91769c1d0d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/configs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/configs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/dto/NoteDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/dto/NoteDto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/dto/UserDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/dto/UserDto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/middleware/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/repositories/AbstractRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/AbstractRepository.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/repositories/NoteRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/NoteRepository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/repositories/UserRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/UserRepository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/router/note/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/note/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/router/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/servies/user/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/servies/user/UserService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/dev.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/AbstractRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/AbstractRepository.ts" afterDir="false" />
@@ -88,7 +81,7 @@
       <updated>1669812550959</updated>
       <workItem from="1669812552681" duration="28905000" />
       <workItem from="1669966444515" duration="7632000" />
-      <workItem from="1670321847202" duration="7210000" />
+      <workItem from="1670321847202" duration="7513000" />
     </task>
     <servers />
   </component>
