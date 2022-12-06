@@ -7,6 +7,31 @@ class NoteRepository extends AbstractRepository {
         super('note')
     }
 
+    async getListingForUser(user_id: number, page: number, perPage: number) {
+        const offset = (page - 1) * perPage
+
+        let records = await this.db().findMany({
+            where: {
+                user_id: user_id
+            },
+            skip: offset,
+            take: perPage,
+            orderBy: [
+                {
+                    id: 'desc'
+                }
+            ]
+        })
+
+        if (!this.excludeFunction) {
+            return records
+        }
+
+        return records.map((record: any) => {
+            return this.excludeFunction ? this.excludeFunction(record, this.excludeFields) : record
+        })
+    }
+
     async create(user_id: number, dto: NoteDto): Promise<Note> {
         const note = await this.db().create({
             data: {

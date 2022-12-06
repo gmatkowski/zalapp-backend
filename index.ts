@@ -12,5 +12,5 @@ app.use(express.json())
 router(app)
 
 app.listen(port, () => {
-    console.log(`⚡️Zalapp at https://localhost:${port}`)
+    console.log(`⚡️Zalapp at http://localhost:${port}`)
 })

@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6381c75-6cf9-4b2f-8177-ea91769c1d0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/dev.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/dev.db-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/migrations/20221130135632_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/UserDto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/AbstractRepository.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/UserRepository.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/configs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/configs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/dto/NoteDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/dto/NoteDto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/dto/UserDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/dto/UserDto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/repositories/AbstractRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/AbstractRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/repositories/NoteRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/NoteRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/repositories/UserRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/repositories/UserRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/router/note/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/note/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/router/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/user/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/servies/user/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/servies/user/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/dev.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/AbstractRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/AbstractRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/NoteRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/NoteRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/note/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/note/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +55,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="18.12.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="18.11.9" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../www/xaris/nano" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -86,6 +88,7 @@
       <updated>1669812550959</updated>
       <workItem from="1669812552681" duration="28905000" />
       <workItem from="1669966444515" duration="7632000" />
+      <workItem from="1670321847202" duration="7210000" />
     </task>
     <servers />
   </component>
@@ -96,6 +99,18 @@
         <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

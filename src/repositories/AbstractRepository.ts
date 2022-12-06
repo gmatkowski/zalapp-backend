@@ -9,7 +9,9 @@ class AbstractRepository {
     excludeFields: Array<string> = []
 
     constructor(entity: string, excludeFunction: Function | null = null, excludeFields: Array<string> = []) {
-        this.client = new PrismaClient()
+        this.client = new PrismaClient({
+            log: ['query'],
+        })
         this.entity = entity
         this.excludeFunction = excludeFunction
         this.excludeFields = excludeFields

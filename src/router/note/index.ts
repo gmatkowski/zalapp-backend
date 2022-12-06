@@ -40,16 +40,29 @@ export default function (router: Router) {
     router.get('/note',
         AuthMiddleware,
         async (req: Request, res: Response) => {
-            const page = parseInt(req.params?.page || '1')
-            const perPage = parseInt(req.params?.perPage || '10')
+            const page = parseInt(<string>req.query?.page || '1')
+            const perPage = parseInt(<string>req.query?.perPage || '10')
 
-            const notes = await noteRepository.getListing(page, perPage)
-            const count = await noteRepository.count()
+            const notes = await noteRepository.getListingForUser(req.user.id, page, perPage)
+
+            /*
+            For some unknown reason this returns undefined :O
+
+            So I'm gonna use a dumb "fix" below:
+
+            const count = await noteRepository.count({
+                where: {
+                    user_id: req.user.id
+                }
+            })
+             */
+
+            const notesAll = await noteRepository.getListingForUser(req.user.id, 1, 1000000)
 
             res.json({
                 data: notes,
                 meta: {
-                    total: count,
+                    total: notesAll.length,
                     page: page,
                     perPage: perPage
                 }

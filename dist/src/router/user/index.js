@@ -134,7 +134,10 @@ export default function (router) {
         });
     }); });
     router.get('/auth/me', AuthMiddleware, function (req, res) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-        return [2 /*return*/, res.json(req.user)];
+        return [2 /*return*/, res.json({ user: req.user })];
+    }); }); });
+    router.post('/auth/logout', AuthMiddleware, function (req, res) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+        return [2 /*return*/, res.json({})];
     }); }); });
     router.delete('/user/:id', AuthMiddleware, function (req, res) { return __awaiter(_this, void 0, void 0, function () {
         var user;

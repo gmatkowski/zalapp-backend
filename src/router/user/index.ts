@@ -90,7 +90,11 @@ export default function (router: Router) {
 
     router.get('/auth/me',
         AuthMiddleware,
-        async (req: Request, res: Response) => res.json(req.user))
+        async (req: Request, res: Response) => res.json({user: req.user}))
+
+    router.post('/auth/logout',
+        AuthMiddleware,
+        async (req: Request, res: Response) => res.json({}))
 
     router.delete('/user/:id',
         AuthMiddleware,

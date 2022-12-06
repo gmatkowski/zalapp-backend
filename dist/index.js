@@ -7,5 +7,5 @@ var port = process.env.PORT || 3003;
 app.use(express.json());
 router(app);
 app.listen(port, function () {
-    console.log("\u26A1\uFE0FZalapp at https://localhost:".concat(port));
+    console.log("\u26A1\uFE0FZalapp at http://localhost:".concat(port));
 });

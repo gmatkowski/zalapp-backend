@@ -74,23 +74,35 @@ export default function (router) {
         });
     }); });
     router.get('/note', AuthMiddleware, function (req, res) { return __awaiter(_this, void 0, void 0, function () {
-        var page, perPage, notes, count;
+        var page, perPage, notes, notesAll;
         var _a, _b;
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
-                    page = parseInt(((_a = req.params) === null || _a === void 0 ? void 0 : _a.page) || '1');
-                    perPage = parseInt(((_b = req.params) === null || _b === void 0 ? void 0 : _b.perPage) || '10');
-                    return [4 /*yield*/, noteRepository.getListing(page, perPage)];
+                    page = parseInt(((_a = req.query) === null || _a === void 0 ? void 0 : _a.page) || '1');
+                    perPage = parseInt(((_b = req.query) === null || _b === void 0 ? void 0 : _b.perPage) || '10');
+                    return [4 /*yield*/, noteRepository.getListingForUser(req.user.id, page, perPage)
+                        /*
+                        For some unknown reason this returns undefined :O
+            
+                        So I'm gonna use a dumb "fix" below:
+            
+                        const count = await noteRepository.count({
+                            where: {
+                                user_id: req.user.id
+                            }
+                        })
+                         */
+                    ];
                 case 1:
                     notes = _c.sent();
-                    return [4 /*yield*/, noteRepository.count()];
+                    return [4 /*yield*/, noteRepository.getListingForUser(req.user.id, 1, 1000000)];
                 case 2:
-                    count = _c.sent();
+                    notesAll = _c.sent();
                     res.json({
                         data: notes,
                         meta: {
-                            total: count,
+                            total: notesAll.length,
                             page: page,
                             perPage: perPage
                         }

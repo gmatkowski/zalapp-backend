@@ -41,7 +41,9 @@ var AbstractRepository = /** @class */ (function () {
         if (excludeFunction === void 0) { excludeFunction = null; }
         if (excludeFields === void 0) { excludeFields = []; }
         this.excludeFields = [];
-        this.client = new PrismaClient();
+        this.client = new PrismaClient({
+            log: ['query'],
+        });
         this.entity = entity;
         this.excludeFunction = excludeFunction;
         this.excludeFields = excludeFields;

@@ -55,6 +55,38 @@ var NoteRepository = /** @class */ (function (_super) {
     function NoteRepository() {
         return _super.call(this, 'note') || this;
     }
+    NoteRepository.prototype.getListingForUser = function (user_id, page, perPage) {
+        return __awaiter(this, void 0, void 0, function () {
+            var offset, records;
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        offset = (page - 1) * perPage;
+                        return [4 /*yield*/, this.db().findMany({
+                                where: {
+                                    user_id: user_id
+                                },
+                                skip: offset,
+                                take: perPage,
+                                orderBy: [
+                                    {
+                                        id: 'desc'
+                                    }
+                                ]
+                            })];
+                    case 1:
+                        records = _a.sent();
+                        if (!this.excludeFunction) {
+                            return [2 /*return*/, records];
+                        }
+                        return [2 /*return*/, records.map(function (record) {
+                                return _this.excludeFunction ? _this.excludeFunction(record, _this.excludeFields) : record;
+                            })];
+                }
+            });
+        });
+    };
     NoteRepository.prototype.create = function (user_id, dto) {
         return __awaiter(this, void 0, void 0, function () {
             var note;
